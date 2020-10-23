@@ -11,13 +11,24 @@
     <a href="index.php">Home</a>
     <h1>Formularios en PHP</h1>
 
-    <form action="controllers/controlador.php" method="POST">
+    <form action="controllers/Controlador.php" method="POST">
         <input type="text" name="nombre" placeholder="Tu Nombre">
         <br>
         <input type="text" name="edad" placeholder="Edad">
         <br>
         <button>Saludar</button>
     </form>
+
+    <p>
+        <?php
+        session_start();
+        if (isset($_SESSION['msg'])) {
+            echo $_SESSION['msg'];
+            unset($_SESSION['msg']);
+        }
+        ?>
+
+    </p>
 
 
 
