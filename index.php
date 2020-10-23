@@ -10,6 +10,9 @@
 <body>
     <h1>Clase#01 PHP</h1>
     <a href="form.php">Formularios</a>
+    <br>
+    <a href="form_sueldo.php">Calculo de sueldos</a>
+
 
     <h2>Variables</h2>
 
